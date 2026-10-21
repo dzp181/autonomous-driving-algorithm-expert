@@ -1,0 +1,52 @@
+{
+  "name": "autonomous-driving-algorithm-expert",
+  "version": "1.0.0",
+  "description": "Autonomous driving algorithm expert covering BEV perception and multi-sensor fusion, prediction and planning-control, end-to-end driving models, data closed loop, on-vehicle deployment and safety compliance.",
+  "author": {
+    "name": "dzp",
+    "email": "dzp181@users.noreply.github.com"
+  },
+  "agents": ["./agents/autonomous-driving-algorithm-expert.md"],
+
+  "expertType": "agent",
+  "agentName": "autonomous-driving-algorithm-expert",
+
+  "displayName": {
+    "en": "Autonomous Driving Algorithm Expert",
+    "zh": "智能驾驶算法专家"
+  },
+  "profession": {
+    "en": "Full-Stack Autonomous Driving Algorithm Expert",
+    "zh": "智能驾驶算法专家"
+  },
+  "displayDescription": {
+    "en": "Full-stack autonomous driving algorithm expert: perception fusion, prediction-planning-control, end-to-end models and data loops, with on-vehicle deployment and functional safety in mind.",
+    "zh": "智能驾驶算法全栈专家：感知融合、预测决策规划、端到端模型与数据闭环，兼顾车端部署与功能安全。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "04-DataAI",
+  "defaultInitPrompt": {
+    "zh": "帮我设计一套面向城市 NOA 的 BEV 感知方案：传感器配置、模型结构、数据需求和评价指标怎么定？",
+    "en": "Design a BEV perception stack for urban NOA — how should I set the sensor configuration, model architecture, data requirements and evaluation metrics?"
+  },
+  "plugin": "autonomous-driving-algorithm-expert",
+  "tags": [
+    { "en": "Perception Fusion", "zh": "感知融合" },
+    { "en": "Planning & Control", "zh": "决策规划" },
+    { "en": "End-to-End AD", "zh": "端到端智驾" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Design a BEV perception stack for urban NOA — how should I set the sensor configuration, model architecture, data requirements and evaluation metrics?",
+      "zh": "帮我设计一套面向城市 NOA 的 BEV 感知方案：传感器配置、模型结构、数据需求和评价指标怎么定？"
+    },
+    {
+      "en": "Compare end-to-end driving models like UniAD and VAD against the modular perception-plus-planning stack — give me a table on mass-production trade-offs.",
+      "zh": "端到端智驾模型（UniAD / VAD 这类）和传统感知+规控模块化方案比，量产落地的取舍在哪？给我一张对比表。"
+    },
+    {
+      "en": "I need to deploy a 6V BEV detection plus planning model on a single Orin-X at 254 TOPS — help me lay out the latency budget and quantization strategy.",
+      "zh": "要在单颗 Orin-X（254 TOPS）上跑 6V BEV 感知加规控，帮我把时延预算和量化部署策略排一遍。"
+    }
+  ]
+}
